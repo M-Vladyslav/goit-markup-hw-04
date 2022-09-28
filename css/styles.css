@@ -172,6 +172,7 @@ button {
 .contact-mail:focus {
   color: var(--blue-color);
 }
+
 .navigation-header-link:hover,
 .navigation-header-link:focus {
   color: var(--blue-color);
@@ -229,7 +230,6 @@ button {
   text-transform: uppercase;
   color: var(--top-line-color);
 }
-
 .slogan-name {
   width: 696px;
   margin-bottom: 30px;
@@ -241,6 +241,17 @@ button {
   background: var(--grey-color);
   padding-bottom: 200px;
   padding-top: 200px;
+}
+.title-slogan {
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/img-staff.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button-order {
@@ -264,7 +275,37 @@ button {
   color: var(--top-line-color);
   background-color: var(--button-color);
 }
-
+.soft-skills-list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+.item {
+  width: 270px;
+  border-radius: 4px;
+}
+.item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  outline: 5px solid tomato;
+  background-position: center;
+  margin-bottom: 30px;
+}
+.item:nth-child(1)::before {
+  background-image: url('../images/sputnik-antena.svg');
+}
+.item:nth-child(2)::before {
+  background-image: url('../images/time.svg');
+}
+.item:nth-child(3)::before {
+  background-image: url('../images/computer.svg');
+}
+.item:nth-child(4)::before {
+  background-image: url('../images/astronaut.svg');
+}
 .soft-skills-item {
   font-weight: 700;
   font-size: 14px;
@@ -272,6 +313,7 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--dark-grey-color);
+  width: 270px;
 }
 .soft-skills-discription {
   font-weight: 400;
@@ -280,6 +322,7 @@ button {
   /* or 171% */
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  width: 270px;
 }
 .soft-skills-list {
   display: flex;
