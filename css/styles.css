@@ -118,6 +118,17 @@ button {
 .navigation-item:last-child {
   margin-right: 0;
 }
+
+.header-icon {
+  width: 16px;
+  height: 12px;
+  fill: var(--main-text-color);
+  margin-right: 10px;
+}
+.header-icon:hover,
+.header-icon:focus {
+  fill: var(--blue-color);
+}
 .contact {
   display: flex;
   margin-left: auto;
@@ -280,32 +291,7 @@ button {
   padding: 0;
   list-style: none;
 }
-.item {
-  width: 270px;
-  border-radius: 4px;
-}
-.item::before {
-  content: '';
-  display: block;
-  height: 120px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  outline: 5px solid tomato;
-  background-position: center;
-  margin-bottom: 30px;
-}
-.item:nth-child(1)::before {
-  background-image: url('../images/sputnik-antena.svg');
-}
-.item:nth-child(2)::before {
-  background-image: url('../images/time.svg');
-}
-.item:nth-child(3)::before {
-  background-image: url('../images/computer.svg');
-}
-.item:nth-child(4)::before {
-  background-image: url('../images/astronaut.svg');
-}
+
 .soft-skills-item {
   font-weight: 700;
   font-size: 14px;
@@ -335,6 +321,11 @@ button {
 }
 .additional {
   padding-top: 0;
+}
+.icon-skills {
+  width: 270px;
+  gap: 30px;
+  margin-bottom: 30px;
 }
 .image-job-title {
   text-align: center;
