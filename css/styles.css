@@ -92,7 +92,7 @@ button {
 .title {
   border-bottom: 1px solid #ececec;
   padding-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 25px;
 }
 .main-link {
   display: flex;
@@ -120,6 +120,9 @@ button {
 }
 .contact {
   display: flex;
+  margin-left: auto;
+  margin-right: 0;
+  align-content: center;
 }
 .header-icon-phone {
   fill: var(--main-text-color);
@@ -130,6 +133,7 @@ button {
 .header-icon-letter {
   width: 16px;
   height: 12px;
+  margin-right: 10px;
 }
 .header-icon-letter:hover,
 .header-icon-letter:focus {
@@ -425,10 +429,20 @@ button {
   display: flex;
   padding-top: 28px;
   justify-content: center;
+  align-items: center;
+}
+
+.staff-icon:hover {
+  background-color: var(--blue-color);
+  fill: var(--top-line-color);
 }
 .staff-icon {
-  margin-left: 10px;
   margin-right: 10px;
+  background-color: var(--top-line-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #afb1b8;
 }
 .regular-customers {
   font-weight: 700;
@@ -459,6 +473,7 @@ button {
 .icon-client:hover,
 .icon-client:focus {
   fill: var(--blue-color);
+  border: 1px solid var(--blue-color);
 }
 
 .site-footer {
