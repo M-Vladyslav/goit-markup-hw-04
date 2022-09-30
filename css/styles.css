@@ -118,21 +118,20 @@ button {
 .navigation-item:last-child {
   margin-right: 0;
 }
-
-.header-icon {
-  width: 16px;
-  height: 12px;
-  fill: var(--main-text-color);
-  margin-right: 10px;
-}
-.header-icon:hover,
-.header-icon:focus {
-  fill: var(--blue-color);
-}
 .contact {
   display: flex;
-  margin-left: auto;
 }
+.header-icon-phone {
+  fill: var(--main-text-color);
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+}
+.header-icon-letter {
+  width: 16px;
+  height: 12px;
+}
+
 .contact .navigation-item + .navigation-item {
   margin-left: 50px;
 }
@@ -261,8 +260,9 @@ button {
   background-size: cover;
   max-width: 1600px;
   height: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .button-order {
@@ -311,7 +311,6 @@ button {
   width: 270px;
 }
 .soft-skills-list {
-  display: flex;
   margin-bottom: 0;
   gap: 30px;
 }
@@ -326,6 +325,7 @@ button {
   width: 270px;
   gap: 30px;
   margin-bottom: 30px;
+  align-items: center;
 }
 .image-job-title {
   text-align: center;
@@ -412,6 +412,40 @@ button {
   color: var(--main-text-color);
   display: block;
   margin-top: 4px;
+}
+.staff-list {
+  display: flex;
+  padding-top: 28px;
+  justify-content: center;
+}
+.staff-icon {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.regular-customers {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  color: var(--dark-grey-color);
+}
+.clients {
+  display: flex;
+  margin-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+.icon-client {
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  margin-right: 30px;
+  padding: 16px 32px;
 }
 .site-footer {
   background: var(--grey-color);
