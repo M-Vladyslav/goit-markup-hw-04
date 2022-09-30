@@ -131,6 +131,14 @@ button {
   width: 16px;
   height: 12px;
 }
+.header-icon-letter:hover,
+.header-icon-letter:focus {
+  fill: var(--blue-color);
+}
+.header-icon-phone:hover,
+.header-icon-phone:focus {
+  fill: var(--blue-color);
+}
 
 .contact .navigation-item + .navigation-item {
   margin-left: 50px;
@@ -446,7 +454,13 @@ button {
   border: 1px solid #afb1b8;
   margin-right: 30px;
   padding: 16px 32px;
+  fill: #afb1b8;
 }
+.icon-client:hover,
+.icon-client:focus {
+  fill: var(--blue-color);
+}
+
 .site-footer {
   background: var(--grey-color);
   padding-top: 60px;
