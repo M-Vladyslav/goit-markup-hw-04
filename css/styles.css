@@ -435,6 +435,7 @@ button {
 .staff-icon:hover {
   background-color: var(--blue-color);
   fill: var(--top-line-color);
+  cursor: pointer;
 }
 .staff-icon {
   margin-right: 10px;
@@ -443,6 +444,7 @@ button {
   height: 44px;
   border-radius: 50%;
   fill: #afb1b8;
+  background-position: center;
 }
 .regular-customers {
   font-weight: 700;
