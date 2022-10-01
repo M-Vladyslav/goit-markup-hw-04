@@ -96,6 +96,7 @@ button {
 }
 .main-link {
   display: flex;
+  align-items: center;
 }
 .navigation {
   display: flex;
@@ -110,7 +111,7 @@ button {
   display: flex;
 }
 .navigation-item {
-  display: block;
+  display: flex;
   align-content: center;
 }
 .navigation-header .navigation-item {
@@ -123,6 +124,10 @@ button {
   display: flex;
   margin-left: auto;
   margin-right: 0;
+  align-items: center;
+}
+.contact-tel {
+  display: flex;
   align-items: center;
 }
 .header-icon-phone {
