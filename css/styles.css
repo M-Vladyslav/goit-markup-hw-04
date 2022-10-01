@@ -96,11 +96,11 @@ button {
 }
 .main-link {
   display: flex;
-  align-items: center;
 }
 .navigation {
   display: flex;
   margin-left: 93px;
+  align-items: center;
 }
 .navigation-header {
   font-weight: 500;
@@ -111,6 +111,7 @@ button {
 }
 .navigation-item {
   display: block;
+  align-content: center;
 }
 .navigation-header .navigation-item {
   margin-right: 50px;
@@ -122,17 +123,15 @@ button {
   display: flex;
   margin-left: auto;
   margin-right: 0;
-  align-content: center;
+  align-items: center;
 }
 .header-icon-phone {
   fill: var(--main-text-color);
   margin-right: 10px;
-  width: 10px;
-  height: 16px;
+  align-self: center;
 }
 .header-icon-letter {
-  width: 16px;
-  height: 12px;
+  fill: var(--main-text-color);
   margin-right: 10px;
 }
 .header-icon-letter:hover,
@@ -427,25 +426,34 @@ button {
 }
 .staff-list {
   display: flex;
-  padding-top: 28px;
+  gap: 10px;
   justify-content: center;
+  margin-top: 16px;
+}
+.staff-link {
+  display: flex;
   align-items: center;
-}
-
-.staff-icon:hover {
-  background-color: var(--blue-color);
-  fill: var(--top-line-color);
-  cursor: pointer;
-}
-.staff-icon {
-  margin-right: 10px;
-  background-color: var(--top-line-color);
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: #afb1b8;
-  background-position: center;
+  background-color: var(--top-line-color);
 }
+
+.staff-link:hover {
+  background-color: var(--blue-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.staff-icon:hover {
+  fill: var(--top-line-color);
+  cursor: pointer;
+}
+
+.staff-icon {
+  fill: #afb1b8;
+}
+
 .regular-customers {
   font-weight: 700;
   font-size: 36px;
@@ -459,30 +467,32 @@ button {
 .clients {
   display: flex;
   margin-bottom: 94px;
-  margin-left: auto;
-  margin-right: auto;
   justify-content: center;
+  gap: 30px;
 }
 .icon-client {
   border-radius: 4px;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
-  margin-right: 30px;
   padding: 16px 32px;
   fill: #afb1b8;
 }
+
 .icon-client:hover,
 .icon-client:focus {
   fill: var(--blue-color);
   border: 1px solid var(--blue-color);
+  cursor: pointer;
 }
 
 .site-footer {
+  display: flex;
   background: var(--grey-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .Web {
   font-family: 'Raleway';
   font-weight: 700;
@@ -547,4 +557,46 @@ button {
 }
 .address {
   margin-top: 20px;
+}
+
+.footer-web {
+  width: 312px;
+  margin-right: 0px;
+}
+.footer-social-network-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 0px;
+  color: var(--top-line-color);
+}
+
+.footer-social-list {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+.footer-social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-social-icon {
+  fill: var(--top-line-color);
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--blue-color);
+  cursor: pointer;
+  border-radius: 50%;
+}
+.footer {
+  display: flex;
+  align-items: baseline;
 }
