@@ -129,23 +129,20 @@ button {
 .contact-tel {
   display: flex;
   align-items: center;
+  color: var(--main-text-color);
 }
 .header-icon-phone {
-  fill: var(--main-text-color);
+  fill: currentColor;
   margin-right: 10px;
   align-self: center;
 }
 .header-icon-letter {
-  fill: var(--main-text-color);
+  fill: currentColor;
   margin-right: 10px;
 }
-.header-icon-letter:hover,
-.header-icon-letter:focus {
-  fill: var(--blue-color);
-}
-.header-icon-phone:hover,
-.header-icon-phone:focus {
-  fill: var(--blue-color);
+.contact-mail:hover,
+.contact-mail:focus {
+  color: var(--blue-color);
 }
 
 .contact .navigation-item + .navigation-item {
@@ -194,11 +191,6 @@ button {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
-.contact-mail:hover,
-.contact-mail:focus {
-  color: var(--blue-color);
-}
-
 .navigation-header-link:hover,
 .navigation-header-link:focus {
   color: var(--blue-color);
@@ -411,9 +403,14 @@ button {
   flex-wrap: wrap;
   gap: 30px;
 }
-.images-item:hover {
+
+.cards:hover,
+.cards:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.cards {
+  display: block;
 }
 .images-item {
   width: 370px;
@@ -451,10 +448,13 @@ button {
   height: 44px;
   border-radius: 50%;
   background-color: var(--top-line-color);
+  color: #afb1b8;
 }
 
-.staff-link:hover {
+.staff-link:hover,
+.staff-link:focus {
   background-color: var(--blue-color);
+  color: var(--top-line-color);
   border-radius: 50%;
   cursor: pointer;
 }
@@ -464,7 +464,7 @@ button {
 }
 
 .staff-icon {
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
 .regular-customers {
@@ -473,13 +473,11 @@ button {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 94px;
   margin-bottom: 50px;
   color: var(--dark-grey-color);
 }
 .clients {
   display: flex;
-  margin-bottom: 94px;
   justify-content: center;
   gap: 30px;
 }
