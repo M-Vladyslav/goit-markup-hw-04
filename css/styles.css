@@ -272,8 +272,6 @@ button {
   background-size: cover;
   max-width: 1600px;
   height: 600px;
-  display: flex;
-  align-items: center;
   margin: 0 auto;
 }
 
@@ -313,6 +311,16 @@ button {
   color: var(--dark-grey-color);
   width: 270px;
 }
+.soft-skills-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
 .soft-skills-discription {
   font-weight: 400;
   font-size: 14px;
@@ -333,12 +341,7 @@ button {
 .additional {
   padding-top: 0;
 }
-.icon-skills {
-  width: 270px;
-  gap: 30px;
-  margin-bottom: 30px;
-  align-items: center;
-}
+
 .image-job-title {
   text-align: center;
   margin-bottom: 50px;
@@ -455,8 +458,6 @@ button {
 .staff-link:focus {
   background-color: var(--blue-color);
   color: var(--top-line-color);
-  border-radius: 50%;
-  cursor: pointer;
 }
 .staff-icon:hover {
   fill: var(--top-line-color);
@@ -481,18 +482,24 @@ button {
   justify-content: center;
   gap: 30px;
 }
-.icon-client {
+.icon-ref {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 4px;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   padding: 16px 32px;
-  fill: #afb1b8;
+  color: #afb1b8;
+}
+.icon-client {
+  fill: currentColor;
 }
 
-.icon-client:hover,
-.icon-client:focus {
-  fill: var(--blue-color);
+.icon-ref:hover,
+.icon-ref:focus {
+  color: var(--blue-color);
   border: 1px solid var(--blue-color);
   cursor: pointer;
 }
@@ -570,14 +577,13 @@ button {
   margin-top: 20px;
 }
 
-.footer-web {
-  width: 312px;
-  margin-right: 0px;
+.footer-social-network {
+  margin-left: 70px;
 }
 .footer-social-network-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-top: 0px;
